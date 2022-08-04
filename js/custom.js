@@ -68,7 +68,7 @@ window.onscroll = () => {
 					items:1,
 					singleItem:true,
 					autoplay:true,
-					autoplayTimeout:4000,
+					autoplayTimeout:6000,
 					autoplaySpeed:1000,
 					smartSpeed:1500,
 					dots:false,
