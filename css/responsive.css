@@ -7,7 +7,16 @@
 		right: -30px;
 	}
 }
-@media (min-width:992px) and (max-width:1200px){
+@media (min-width:992px) and (max-width:1600px){
+	.text-header{
+		width: 50%;
+	 }
+	 .text-header-2{
+		width: 45%;
+	 }
+	 .text-header-3{
+		width: 40%;
+	 }
 	.blog_desc {
 		padding: 20px;
 	}
@@ -142,6 +151,9 @@
 	/*=== Blog section css ===*/
 }
 @media(max-width:991px){
+	.logo-desing {
+		width: 16%;
+	}
 	/*=== audio player css ===*/
 	.audio_wrapper .mejs-button.mejs-prevtrack-button {
 		left: 31%;
@@ -160,8 +172,16 @@
 	/*=== blog single css ===*/
 }
 @media(max-width:767px){
+	.section_heading  {
+		margin-top: 30px;
+	}
+	.ms_artist_section {
+		flex-direction: column;
+		text-align: center;
+		align-content: center;
+	  }
 	.logo-desing {
-		width: 25%;
+		width: 16%;
 	}
 	.header {
 		padding-left: 2.2rem;
@@ -209,6 +229,18 @@
 		font-size:40px;
 		line-height:50px;
 	}
+	.text-header{
+		width: 100%;
+	 }
+	 .text-header-2{
+		width: 100%;
+	 }
+	 .text-header-3{
+		width: 100%;
+	 }
+	 .icon-what {
+		width: 50%;
+	 }
 	/* slider css */
 	/*==== blog single css====*/
 	.right_avtar_details .cmt_title .comment-author{
@@ -223,6 +255,9 @@
 	}
 }
 @media(max-width:600px){
+	.logo-desing {
+		width: 20%;
+	}
 	.ms_blog_section .blog_thumb{
 		width: 100%;
 	}
@@ -239,6 +274,9 @@
 	}
 }
 @media(max-width:550px){
+	.logo-desing {
+		width: 25%;
+	}
 	/*=== audio player css ===*/
 	.audio_wrapper {
 		min-height: 290px;

@@ -50,6 +50,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    pointer-events: none;
+}
+
 ::selection {
     background: #ffffff;
     color: #151515;
@@ -102,15 +106,17 @@ button:after, a:after {
 .ms_button {
     position: relative;
     z-index: 1;
+    font-weight: bold;
     overflow: hidden;
     text-transform: capitalize;
     color: #ffffff;
     font-size: 15px;
     letter-spacing: 0.02em;
     font-family: 'Montserrat';
-    background-color: #f73939;
+    background-color: var(--palet-2);
     padding: 10px 15px;
     text-decoration: none;
+    border-radius: 15px;
     border: none;
     display: inline-block;
     perspective-origin: top;
@@ -126,8 +132,9 @@ button:after, a:after {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: var(--white);
     z-index: -1;
+    border-radius: 15px;
     transform: rotateX(90deg);
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
@@ -138,7 +145,8 @@ button:after, a:after {
 }
 
 .ms_button:hover {
-    color: #f73939;
+    color: var(--black);
+    border-radius: 15px;
     text-decoration: none;
 }
 
@@ -198,7 +206,7 @@ button:after, a:after {
 .header .nav a {
     font-size: 20px;
     margin-left: 2rem;
-    color: var(--palet-2);
+    color: var(--white);
     font-family: 'Montserrat-bold';
 }
 
@@ -212,6 +220,24 @@ button:after, a:after {
     cursor: pointer;
     color: var(--palet-2);
 }
+
+.btn-contact {
+    display: inline-block !important;
+    margin-top: 1rem !important;
+    cursor: pointer !important;
+    color:  var(--white) !important;
+    border: 0.2rem solid var(--palet-1) !important;
+    background: no-repeat !important;
+    font-size: 1.7rem !important;
+    border-radius: 1rem !important;
+    padding: 1rem 3rem !important;
+  }
+
+  .btn-contact:hover {
+    color:  var(--white) !important;
+    background-color: var(--palet-1) !important;
+    border: 0.2rem solid var(--palet-1) !important;
+  }
 
 /*==== preloader css start ====*/
 .preloader {
@@ -240,6 +266,16 @@ button:after, a:after {
 .preloader_inner img {
     display: inline-block;
     max-width: 100%;
+}
+
+.text-script {
+    font-family: 'Signatrue' !important;
+    color: var(--palet-2) !important;
+}
+
+.text-script-about {
+    font-family: 'Signatrue' !important;
+    color: var(--palet-1) !important;
 }
 
 /*==== preloader css start ====*/
@@ -413,6 +449,17 @@ button:after, a:after {
 .text-header-2 {
     width: 60%;
     height: auto;
+    padding-top: 25px;
+    line-height: 35px;
+    font-size: 24px;
+}
+
+.text-info-2 {
+    padding-top: 35px;
+}
+
+.text-info-3 {
+    padding-top: 35px;
 }
 
 .text-header-3 {
@@ -515,7 +562,7 @@ button:after, a:after {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #1d003dab 0%, #270066e0 100%);
+    background: linear-gradient(to bottom, #3d140087 0%, #003f669e 100%);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -596,7 +643,7 @@ button:after, a:after {
 }
 
 .owl-controls .owl-dot.active {
-    background: #f73939;
+    background: var(--palet-2);
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -614,16 +661,91 @@ button:after, a:after {
  3. slider Css End
 ----------------------------------------------------------------------------------*/
 
+.about {
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 42vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  
+  .about .image {
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  
+  .about .image img {
+    width: 80%;
+    margin: auto;
+    border-radius: 2rem;
+  }
+  
+  .about .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
+  }
+  
+  .about .content .title {
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    color:  var(--sunset-3);
+  }
+  
+  .about .content p {
+    font-size: 16px;
+    line-height: 2; 
+    font-weight: bold;
+    color: var(--white);
+    padding: 4rem;
+  }
+  
+  .about .content .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  
+  .bottom-right{
+    margin-top: 23px;
+  }
+  
+  .about .content .icons h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:  var(--white);
+  }
 /*----------------------------------------------------------------------------------
  4. Artist Css Start
 ----------------------------------------------------------------------------------*/
 .ms_artist_section {
     width: 100%;
     float: left;
-    background-image: url(http://via.placeholder.com/1920x935/111111/ff5050);
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.about-img {
+    background-image: url(../images/background-about.png);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
 }
 
 .section_heading {
@@ -631,7 +753,7 @@ button:after, a:after {
     width: 100%;
     text-align: center;
     margin-top: 110px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .section_heading h1 {
@@ -735,6 +857,7 @@ button:after, a:after {
     background-color: #222222;
     margin-bottom: 50px;
     display: table;
+    border-radius: 20px;
 }
 
 .blog_thumb {
@@ -770,6 +893,7 @@ button:after, a:after {
 
 .ms_blog_section .blog_thumb {
     width: 45%;
+    border-radius: 20px;
 }
 
 .ms_blog_section .blog_desc {
@@ -1298,57 +1422,70 @@ button:after, a:after {
 .ms_contact_section {
     width: 100%;
     float: left;
-    background-image: url(http://via.placeholder.com/1920x935/111111);
+    padding-bottom: 30px;
+    background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
 
-.contact_cover {
+.contact .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+  
+  .contact .row .map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
     width: 100%;
-    float: left;
-}
-
-.contact_form_sec {
-    width: 100%;
-    float: left;
-}
-
-.contact_form_sec h2 {
-    font-size: 30px;
-    color: #ffffff;
-    margin: 0 0 45px;
-    font-family: 'Merriweather', serif;
-}
-
-.contact_form_sec .form-control {
-    height: 50px;
-    padding-left: 25px !important;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0;
-    border-radius: 0;
-}
-
-.contact_form_sec .form-group {
-    float: left;
-    width: 100%;
-    margin-bottom: 22px;
-}
-
-.contact_form_sec textarea {
-    height: 140px !important;
-    resize: none;
-}
-
-.contact_form_sec .submit_btn {
-    font-size: 16px;
-    padding: 12px 47px;
-}
+  }
+  
+  .contact .row .form .icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contact .row .form .icons-container .icons {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 17rem;
+            flex: 1 1 17rem;
+    text-align: center;
+  }
+  
+  .contact .row .form .icons-container .icons i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    background:  var(--palet-3);
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact .row .form .icons-container .icons h3 {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:  var(--white);
+  }
+  
+  .contact .row .form .icons-container .icons p {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: var(--white);
+  }
 
 .map_part_wrapper {
     float: left;
@@ -1383,6 +1520,60 @@ button:after, a:after {
 
 .ms_footer_section .copyright_text a:hover {
     color: #ffffff;
+}
+
+.ms_footer_section {
+    width: 100%;
+    float: left;
+    padding-top: 80px !important;
+    padding-bottom: 5px !important;
+    background-color:rgba(0, 0, 0, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#fff;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--palet-2);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1.5rem;
+    color:#fff;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color:#fff;
+    padding:2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer .credit a{
+    color:var(--palet-2);
 }
 
 p#err_msg {
