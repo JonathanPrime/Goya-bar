@@ -34,7 +34,7 @@
 					<a href="#home">Inicio</a>
 					<a href="#about">Nosotros</a>
 					<a href="#services">Servicios</a>
-					<a href="#menu">Bebidas</a>
+					<a href="#drinks">Bebidas</a>
 					<a href="#contact">Contáctanos</a>
 					<!-- <a href="#blogs">Noticias</a> -->
 				</nav>
@@ -211,7 +211,7 @@
 	</div>
 
 	<!-- Bebidas section start -->
-	<section class="menu" id="menu">
+	<div class="menu ms_artist_section" id="drinks" name="drinks">
 		<div class="container align-items-center justify-content-center">
 			<div class="col-md-12 title-products">
 				<div class="heading_div">
@@ -576,7 +576,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<!-- menu us section ends -->
 	<!-- Bebidas section end -->
 
@@ -673,11 +673,11 @@
 
 				<div class="box">
 					<h3>Ubicaciones</h3>
-					<a href="https://goo.gl/maps/pwos8A5FMZ85mSp48"> <i class="fas fa-map-marker-alt"></i> <b>Goya 1</b>
+					<a href="https://goo.gl/maps/pwos8A5FMZ85mSp48" target="_blank"> <i class="fas fa-map-marker-alt"></i> <b>Goya 1</b>
 						Cll 163A #8C-38 </a>
-					<a href="https://goo.gl/maps/fcj8mSWykkBfYXki9"> <i class="fas fa-map-marker-alt"></i> <b>Goya 2</b>
+					<a href="https://goo.gl/maps/fcj8mSWykkBfYXki9" target="_blank"> <i class="fas fa-map-marker-alt"></i> <b>Goya 2</b>
 						Cra 8 #163-51 </a>
-					<a href="https://goo.gl/maps/oy3UpAnYZUPoghFe7"> <i class="fas fa-map-marker-alt"></i> <b>Goya 3</b>
+					<a href="https://goo.gl/maps/oy3UpAnYZUPoghFe7" target="_blank"> <i class="fas fa-map-marker-alt"></i> <b>Goya 3</b>
 						Cll 163 #8C-18 </a>
 				</div>
 
@@ -692,15 +692,15 @@
 
 				<div class="box">
 					<h3>Contacto</h3>
-					<a href="tel:+573017450149"> <i class="fas fa-phone"></i> +57 301 745 0149 </a>
-					<a href="mailto:goyatiendagourmet@gmail.com"> <i class="fas fa-envelope"></i>
+					<a href="tel:+573017450149" target="_blank"> <i class="fas fa-phone"></i> +57 301 745 0149 </a>
+					<a href="mailto:goyatiendagourmet@gmail.com" target="_blank"> <i class="fas fa-envelope"></i>
 						goyatiendagourmet@gmail.com </a>
 				</div>
 
 				<div class="box">
 					<h3>Síguenos</h3>
-					<a href="https://www.facebook.com/tiendagoya1"> <i class="fab fa-facebook-f"></i> facebook </a>
-					<a href="https://www.instagram.com/tienda_goya/"> <i class="fab fa-instagram"></i> instagram </a>
+					<a href="https://www.facebook.com/tiendagoya1" target="_blank"> <i class="fab fa-facebook-f"></i> facebook </a>
+					<a href="https://www.instagram.com/tienda_goya/" target="_blank"> <i class="fab fa-instagram"></i> instagram </a>
 				</div>
 
 			</div>
@@ -741,39 +741,6 @@
 	<!-- custom js -->
 	<script type="text/javascript" src="js/custom.js"></script>
 	<!-- custom js -->
-	<!-- google map script -->
-	<script>
-		$(document).ready(function () {
-			var myCenter = new google.maps.LatLng(51.508530, -0.076132);
-			function initialize() {
-				var mapProp = {
-					center: myCenter,
-					zoom: 8,
-					scrollwheel: false,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				var map = new google.maps.Map(document.getElementById("contact_map"), mapProp);
-				var icon = {
-					url: 'images/icon/map_pin.png'
-				};
-				var marker = new google.maps.Marker({
-					position: myCenter,
-					map: map,
-					title: 'Template Bundle',
-					icon: icon
-				});
-				marker.setMap(map);
-				var infowindow = new google.maps.InfoWindow({
-					content: "<span> Template Bundle </span>"
-				});
-				google.maps.event.addListener(marker, 'click', function () {
-					infowindow.open(map, marker);
-				});
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		});
-	</script>
-	<!-- google map script -->
 </body>
 <!--body end -->
 
