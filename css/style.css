@@ -1537,7 +1537,7 @@ button:after, a:after {
   }
   .owl-theme .owl-nav [class*=owl-] {
     color: #ffffff;
-    padding-left: 12px;
+    padding-left: 20px;
     padding-top: 5px;
     font-size: 26px;
     background: #00000061;
