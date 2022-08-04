@@ -67,11 +67,11 @@ window.onscroll = () => {
 					margin:0,
 					items:1,
 					singleItem:true,
-					autoplay:false,
+					autoplay:true,
 					autoplayTimeout:4000,
 					autoplaySpeed:1000,
 					smartSpeed:1500,
-					dots:true,
+					dots:false,
 					nav:false,
 					responsiveClass:true,
 					responsive:{
@@ -152,10 +152,34 @@ window.onscroll = () => {
 		},
 		//Active menu
 		Active_menu:function(){
-			/* $(".header_right_menu > ul > li > a").on('click',function(){
-				$('ul.menu > li > a').removeClass("active");
-				$(this).addClass("active");
-			}); */
+			$('#customers-testimonials').owlCarousel({
+				loop: true,
+				nav: true,
+				navText: ["<div class='nav-button owl-next'>‹</div>", "<div class='nav-button owl-prev'>›</div>"],
+				center: true,
+				items: 3,
+				margin: 0,
+				autoplay: true,
+				dots: false,
+				autoplayTimeout: 8500,
+				smartSpeed: 450,
+			 
+				responsive: {
+				   0: {
+					  items: 1
+				   },
+				   768: {
+					  items: 2
+				   },
+				   1170: {
+					  items: 3
+				   },
+				   3840: {
+					  items: 3
+				   }
+				}
+			 });
+			
 		},
 		//audio player
 		audio_player:function(){

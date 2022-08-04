@@ -7,6 +7,7 @@
 @import url("custom_animation.css");
 /*-- plugins --*/
 @import url("../js/plugins/owl-crousel/owl.carousel.css");
+@import url("../js/plugins/owl-crousel/owl.theme.default.min.css");
 @import url("../js/plugins/player/css/mediaelementplayer.min.css");
 @import url("../js/plugins/player/css/mep-feature-playlist.css");
 /*-- plugins --*/

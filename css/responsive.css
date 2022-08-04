@@ -151,6 +151,9 @@
 	/*=== Blog section css ===*/
 }
 @media(max-width:991px){
+	.title-products .heading_div, .title-products .icon_bebida {
+		padding-top: 110px;
+	}
 	.logo-desing {
 		width: 16%;
 	}
@@ -173,7 +176,8 @@
 }
 @media(max-width:767px){
 	.section_heading  {
-		margin-top: 30px;
+		margin-top: 60px;
+		margin-bottom: 60px;
 	}
 	.ms_artist_section {
 		flex-direction: column;
