@@ -285,14 +285,14 @@ popupWhatsApp = () => {
 	   let msg = document.getElementById('whats-in').value;
 	   let relmsg = msg.replace(/ /g, "%20");
 	   //just change the numbers "1515551234567" for your number. Don't use +001-(555)1234567     
-	   window.open('https://wa.me/573202844903?text=' + relmsg, '_blank');
+	   window.open('https://wa.me/573112163664?text=' + relmsg, '_blank');
  
 	});
  
 	/* Open pop-up in 15 seconds */
-	setTimeout(() => {
+	/* setTimeout(() => {
 	  popup.classList.toggle('is-active-whatsapp-popup');
-	}, 8000);
+	}, 8000); */
  
  }
  
