@@ -876,6 +876,10 @@ button:after, a:after {
     border-radius: 20px;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 .blog_thumb {
     float: left;
     width: 100%;
